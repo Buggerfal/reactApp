@@ -1,29 +1,51 @@
 import React from 'react';
 import {render} from 'react-dom';
+import './css/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
 
-const buttonMove = 'Move';
-const styles = {color: 'red'};
+
+const buttonAddCircle = 'Add CIRCLE';
+const buttonMove = 'MOVE';
+const buttonChangeRadius = 'CHANGE';
 
 class ListMenu extends React.Component {
     render() {
         return (
-            <ul>
-                <li>{ (new Date).toDateString()}</li>
-                <li style={styles}>2</li>
-                <li>3</li>
-                <li>4</li>
-            </ul>
+            <div className='menu'>
+                <BtnAddCircle/>
+                <BtnMove/>
+                <BtnChange/>
+            </div>  
         );
     }
 }
 
-class BackGround extends React.Component {
+class BtnAddCircle extends React.Component {
     render() {
         return (
-            <div>
-                <input type="text" placeholder="Hello!"/>
-                <button> {buttonMove}
-                </button>
+            <div id='add_circle'>
+                <Button color="danger">{buttonAddCircle}!</Button>
+            </div>
+        );
+    }
+}
+
+class BtnMove extends React.Component {
+    render() {
+        return (
+            <div id='move'>
+                <Button color="danger">{buttonMove}!</Button>
+            </div>
+        );
+    }
+}
+
+class BtnChange extends React.Component {
+    render() {
+        return (
+            <div id='change'>
+                <Button color="danger">{buttonChangeRadius}!</Button>
             </div>
         );
     }
@@ -32,10 +54,8 @@ class BackGround extends React.Component {
 class MainMenu extends React.Component {
     render() {
         return (
-            <div id='menu'>
-                <button>{buttonMove}</button>
+            <div>
                 <ListMenu/>
-                <BackGround/>
             </div>
         );
     }
