@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
-
+import { SketchPicker } from 'react-color';
 
 const buttonAddCircle = 'Add CIRCLE';
 const buttonMove = 'MOVE';
@@ -51,6 +51,16 @@ class BtnChange extends React.Component {
     }
 }
 
+class Picker extends React.Component {
+    render() {
+        return (
+            <div id='picker'>
+                <SketchPicker />
+            </div>
+        );
+    }
+}
+
 class MainMenu extends React.Component {
     render() {
         return (
@@ -61,4 +71,5 @@ class MainMenu extends React.Component {
     }
 }
 
-render (<MainMenu/>, document.getElementById('root'))
+render (<MainMenu/>, document.getElementById('root'));
+render (<Picker/>, document.getElementById('context'));
