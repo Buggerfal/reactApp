@@ -1,7 +1,4 @@
 import React from 'react';
-// import {render} from 'react-dom';
-import '../css/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
 
 class Btn extends React.Component {
