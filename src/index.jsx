@@ -4,49 +4,20 @@ import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
 import { SketchPicker } from 'react-color';
+import Btn from './components/Button';
 
 const buttonAddCircle = 'Add CIRCLE';
 const buttonMove = 'MOVE';
-const buttonChangeRadius = 'CHANGE';
+const buttonChange = 'CHANGE';
 
 class ListMenu extends React.Component {
     render() {
         return (
             <div className='menu'>
-                <BtnAddCircle/>
-                <BtnMove/>
-                <BtnChange/>
+                <Btn text={buttonAddCircle} id='add_circle'/>
+                <Btn text={buttonMove} id='move'/>
+                <Btn text={buttonChange} id='change'/>
             </div>  
-        );
-    }
-}
-
-class BtnAddCircle extends React.Component {
-    render() {
-        return (
-            <div id='add_circle'>
-                <Button color="danger">{buttonAddCircle}!</Button>
-            </div>
-        );
-    }
-}
-
-class BtnMove extends React.Component {
-    render() {
-        return (
-            <div id='move'>
-                <Button color="danger">{buttonMove}!</Button>
-            </div>
-        );
-    }
-}
-
-class BtnChange extends React.Component {
-    render() {
-        return (
-            <div id='change'>
-                <Button color="danger">{buttonChangeRadius}!</Button>
-            </div>
         );
     }
 }
@@ -72,4 +43,4 @@ class MainMenu extends React.Component {
 }
 
 render (<MainMenu/>, document.getElementById('root'));
-render (<Picker/>, document.getElementById('context'));
+// render (<Picker/>, document.getElementById('context'));
