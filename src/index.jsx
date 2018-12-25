@@ -16,4 +16,4 @@ class App extends React.Component {
 }
 
 render (<App/>, document.getElementById('root'));
-render (<Picker/>, document.getElementById('context'));
+// render (<Picker/>, document.getElementById('context'));
