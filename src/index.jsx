@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
 import { SketchPicker } from 'react-color';
 import Btn from './components/Button';
+import Picker from './components/ColorPicker';
 
 const buttonAddCircle = 'Add CIRCLE';
 const buttonMove = 'MOVE';
@@ -22,17 +23,7 @@ class ListMenu extends React.Component {
     }
 }
 
-class Picker extends React.Component {
-    render() {
-        return (
-            <div id='picker'>
-                <SketchPicker />
-            </div>
-        );
-    }
-}
-
-class MainMenu extends React.Component {
+class App extends React.Component {
     render() {
         return (
             <div>
@@ -42,5 +33,5 @@ class MainMenu extends React.Component {
     }
 }
 
-render (<MainMenu/>, document.getElementById('root'));
-// render (<Picker/>, document.getElementById('context'));
+render (<App/>, document.getElementById('root'));
+render (<Picker/>, document.getElementById('context'));
