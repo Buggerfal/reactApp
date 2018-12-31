@@ -63,7 +63,7 @@ class CircleSettings extends React.Component {
             <ReactBootstrapSlider 
                 value={1} 
                 change={null}
-                disabled={this.state.activeButtonName && button.name !== this.state.activeButtonName ? 'disabled' : ''}
+                disabled={button.name !== this.state.activeButtonName ? 'disabled' : ''}
             />
         </Fragment>
     
