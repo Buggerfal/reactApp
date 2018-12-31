@@ -3,14 +3,11 @@
     position: absolute
 }
 
-.menu {
-    display: flex;
-    background-color: red;
+
+/* #context {
     width: 300px;
-    height: 300px;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    background-color: yellow;
+} */
 
 .settings {
     display: flex;
@@ -19,6 +16,15 @@
     height: 600px;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #picker {

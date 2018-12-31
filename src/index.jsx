@@ -1,14 +1,17 @@
 import React from 'react';
 import {render} from 'react-dom';
-import './css/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Picker from './components/ColorPicker';
 import Menu from './components/Menu';
+
+// styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-slider/dist/css/bootstrap-slider.min.css';
+import './css/style.css';
 
 class App extends React.Component {
     render() {
         return (
             <div>
+
                 <Menu/>
             </div>
         );

@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
     "react": "^16.6.3",
+    "react-bootstrap-slider": "^2.1.5",
     "react-color": "^2.17.0",
     "react-dom": "^16.6.3",
+    "react-numeric-input": "^2.2.3",
     "react-scripts": "2.1.1",
     "reactstrap": "^6.5.0"
   },
